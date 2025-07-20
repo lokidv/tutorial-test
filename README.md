@@ -6,3 +6,7 @@ sudo apt update && sudo apt upgrade -y
 ```
 kill id
 ```
+تانل کردن سرور ایران
+```
+wget https://raw.githubusercontent.com/lokidv/wghelper/main/install.sh && chmod +x install.sh && ./install.sh
+```
