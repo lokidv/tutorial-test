@@ -6,9 +6,23 @@ sudo apt update && sudo apt upgrade -y
 ```
 kill id
 ```
-تانل کردن سرور ایران
+تانل کردن سرور ایران برای بار اول
 ```
 wget https://raw.githubusercontent.com/lokidv/wghelper/main/install.sh && chmod +x install.sh && ./install.sh
+```
+برای بار دوم
+```
+nano /etc/systemd/system/udp2raw-serviceName.service
+بعد اظلاعات رو کپی میکنیم و 
+و یک سرویس جدید میسازیم
+nano /etc/systemd/system/udp2raw-serviceName2.service
+ااطلاعات کپی میکنیم
+بعد مشخصات سرور رو تغییر میدیم
+و سرویس رو استارت میکنیم
+
+sudo systemctl enable --now udp2raw-serviceName.service
+
+
 ```
 برای ویرایش سرویس
 ```
